@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Final-Codetribe-Bootcamp-Assessment
 Bootcamp final assessment.
 =======
@@ -100,3 +99,7 @@ This challenge is completely free. Please share it with anyone who will find it 
 
 **Have fun building!** 🚀
 >>>>>>> 9b24885 (Added test result page)
+=======
+# Final-Codetribe-Bootcamp-Assessment
+Bootcamp final assessment.
+>>>>>>> a0826fbf6d98a707d8df19e5a5ff3d736c8438f2
