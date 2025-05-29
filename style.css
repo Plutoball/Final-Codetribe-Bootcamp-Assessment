@@ -11,7 +11,8 @@ body {
     display: flex;
     justify-content: space-between; /* Positions elements left and right */
     align-items: center;
-    max-width: 500px;
+    max-width: 600px;
+    width: 90%;
     margin: auto;
     text-align: center;
     background: white;
@@ -31,6 +32,8 @@ h2{
 
 /* Style for the left side of the card */
 .scorecard {
+    display: flex;
+    flex-direction: column;
     background: linear-gradient(to bottom, #7858ff, #2e2cfa);
     color: white;
     padding: 40px;
@@ -45,14 +48,14 @@ h2{
 }
 
 .scorecard h2 {
-    font-size: 32px;
+    font-size: 36px;
     font-weight: bold;
     background: linear-gradient(to bottom, #4e21ca, #2421ca00);
     color: white;
-    padding: 20px;
+    padding: 15px;
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -62,13 +65,14 @@ h2{
 }
 
 .big-score {
-    font-size: 40px;
+    font-size: 60px;
     font-weight: bold;
     align-items: center;
 }
 
 .small-score {
     font-size: 16px;
+    font-weight: normal;
     opacity: 0.7;
     align-items: center;
 }
@@ -96,15 +100,17 @@ h2{
 
 /* Style for the right side of the card */
 .summary {
-   width: 250px;
+   width: 280px;
    margin: auto;
-   padding: 15px; 
+   padding: 20px;
+   text-align: left; 
 }   
 
 .summary h2 {
     font-size: 20px;
     font-weight: bold;
-    margin: 20px;
+    margin-bottom: 40px;
+    margin-left: 10px;
     color: #303b5a;
     text-align: left;
 }
@@ -129,14 +135,39 @@ h2{
 .summary p.verbal { background-color: #dcfff7; color: #00bb8f; }
 .summary p.visual { background-color: #dee1ff; color: #1125d6; }
 
+.of-100 {
+    font-size: 16px;
+    color: #7a85a4;
+}
+.reaction-score { 
+    color: #303b5a;
+    font-weight: bold;
+    font-size: 16px; 
+}
+.memory-score { color: #303b5a;
+    font-weight: bold;
+    font-size: 16px; 
+}
+.verbal-score { color: #303b5a;
+    font-weight: bold;
+    font-size: 16px; 
+}
+.visual-score { 
+    color: #303b5a; 
+    font-weight: bold;
+    font-size: 16px;
+}
+
 button {
     margin-top: 10px;
     background-color: #303b5a;
     color: white;
     font-size: 16px;
     font-weight: 400;
-    padding: 10px 80px;
-    border-radius: 50px;
+    padding: 12px 100px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
 }
 
 button:hover {
