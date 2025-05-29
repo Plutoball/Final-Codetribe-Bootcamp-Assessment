@@ -4,35 +4,52 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png"> <!-- Favicon for the site -->
   
   <title>Frontend Mentor | Results summary component</title>
 
   <!-- Customised own stylesheet -->
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+ <!--Container for the whole card-->
  <div class="container">
-  <div class=" scorecard">
-    <p>Your Result</p>
-    <h2>76/100</h2>
-    <p>Great!</p>
-    <p>You scored higher than 65% of the people who have taken these tests.</p>
+
+  <!--Containter for the score information left side-->
+  <div class="scorecard">
+    <p class="score-title">Your Result</p>
+    <h2> <span class="big-score">72</span> <span class="small-score">/100</span> </h2>
+    <p class="comment-title">Great!</p>
+    <p class="comment">You scored higher than 65% of the people who have taken these tests.</p>
   </div>
+
+  <!--Container for the score information right side-->
   <div class ="summary">
-    <p>Reaction: <strong>80 / 100</strong></p>
-    <p>Memory: <strong>92 / 100</strong></p>
-    <p>Verbal: <strong>61 / 100</strong></p>
-    <p>Visual: <strong>72 / 100</strong></p>
+    <h2>Summary</h2>
+    
+    <p class="reaction"> 
+      <img src="assets/images/icon-reaction.svg" alt="Reaction Icon">Reaction<strong>80</strong>/100
+    </p>
+
+    <p class="memory">
+      <img src="assets/images/icon-memory.svg" alt="Memory Icon">Memory<strong>92</strong>/100
+    </p>
+
+    <p class="verbal">
+      <img src="assets/images/icon-verbal.svg" alt="Verbal Icon">Verbal<strong>61</strong>/100
+    </p>
+
+    <p class="visual">
+      <img src="assets/images/icon-visual.svg" alt="Visual Icon">Visual<strong>72</strong>/100
+    </p>
+
+    <button id="continue-button">Continue</button>
   </div>
-  <button id="continue-button">Continue</button>
+  
  </div>
 
-<script src="script.js"></script> 
-<!--Challenge source--> 
-  <!--div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Thokozani Tshabalala</a>.
-  </div -->
+ <script src="script.js"></script>
+
 </body>
 </html>

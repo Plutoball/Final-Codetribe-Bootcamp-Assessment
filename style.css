@@ -1,32 +1,146 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Hanken Grotesk', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     background-color: #f0f0f0;
 }
-
+/* General layout style for the whole card */
 .container {
+    display: flex;
+    justify-content: space-between; /* Positions elements left and right */
+    align-items: center;
+    max-width: 500px;
+    margin: auto;
     text-align: center;
     background: white;
-    padding: 20px;
-    border-radius: 10px;
+    border-radius: 30px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-.score-card {
-    background-color: purple;
-    color: white;
-    padding: 15px;
-    border-radius: 10px;
+h2{
+    margin: 0;
 }
 
-button {
-    background-color: blue;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    margin-top: 10px;
+/* ensure both sides are equal width */
+.scorecard, .summary {
+    flex: 1; /* This makes both sides take equal space */
+    padding: 20px;
 }
+
+/* Style for the left side of the card */
+.scorecard {
+    background: linear-gradient(to bottom, #7858ff, #2e2cfa);
+    color: white;
+    padding: 40px;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 250px;
+    height: auto;
+    min-height: 200px;
+    margin: auto;
+}
+
+.scorecard h2 {
+    font-size: 32px;
+    font-weight: bold;
+    background: linear-gradient(to bottom, #4e21ca, #2421ca00);
+    color: white;
+    padding: 20px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Ensures proper text display */
+    margin-top: 0;
+}
+
+.big-score {
+    font-size: 40px;
+    font-weight: bold;
+    align-items: center;
+}
+
+.small-score {
+    font-size: 16px;
+    opacity: 0.7;
+    align-items: center;
+}
+
+.scorecard p.score-title {
+    font-size: 20px;
+    font-weight: medium;
+    margin-top: 20px;
+}
+
+.scorecard p.comment-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 20px;
+    
+}
+
+.scorecard p.comment {
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 10px;
+    opacity: 0.8;
+    line-height: 1.5;
+}
+
+/* Style for the right side of the card */
+.summary {
+   width: 250px;
+   margin: auto;
+   padding: 15px; 
+}   
+
+.summary h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px;
+    color: #303b5a;
+    text-align: left;
+}
+
+.summary p{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 10px;   
+}
+
+.summary p img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;   
+}
+
+.summary p.reaction { background-color: #ffebeb; color: #ff5757; }
+.summary p.memory { background-color: #fff7d6; color: #ffcc66; }
+.summary p.verbal { background-color: #dcfff7; color: #00bb8f; }
+.summary p.visual { background-color: #dee1ff; color: #1125d6; }
+
+button {
+    margin-top: 10px;
+    background-color: #303b5a;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px 80px;
+    border-radius: 50px;
+}
+
+button:hover {
+    background-color: #1f2a48;
+    transition: 0.3s ease-in-out;
+}
+
