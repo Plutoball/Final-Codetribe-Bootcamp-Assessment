@@ -135,6 +135,11 @@ h2{
 .summary p.verbal { background-color: #dcfff7; color: #00bb8f; }
 .summary p.visual { background-color: #dee1ff; color: #1125d6; }
 
+.label {
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;   
+}
 .of-100 {
     font-size: 16px;
     color: #7a85a4;
@@ -158,12 +163,29 @@ h2{
     font-size: 16px;
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.summary p {
+    opacity: 0; /* Start with elements hidden */
+    animation-delay: 0.8s;  /*Delay for the first element
+    /*animation-fill-mode: forwards; /* Keep the final state after animation */
+    animation: fadeIn 0.8s ease-in-out forwards;
+}
+
 button {
     margin-top: 10px;
     background-color: #303b5a;
     color: white;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: bold;
     padding: 12px 100px;
     border-radius: 30px;
     border: none;
@@ -171,7 +193,7 @@ button {
 }
 
 button:hover {
-    background-color: #1f2a48;
+    background-color: #220d98;
     transition: 0.3s ease-in-out;
 }
 
